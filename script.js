@@ -45,9 +45,9 @@ const getResult =()=>{
             count++;
         }
     });
-    let rightWords = (GivenWords.length-count);
-    showRight.innerHTML = count + " " + 'words';
-    showWrong.innerHTML = rightWords + " " + 'words';
+    let wrongWords = (GivenWords.length-count);
+    showRight.innerHTML = count + " " + 'out of'+" "+GivenWords.length+" "+ "words";
+    showWrong.innerHTML = wrongWords + " " + 'words';
     showtotalTime.innerHTML = `You took ${Math.round(totalTime)} seconds to complete the task.`; 
 
 
